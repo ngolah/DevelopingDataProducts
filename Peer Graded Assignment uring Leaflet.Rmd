@@ -1,0 +1,20 @@
+---
+title: "Peer-graded Assignment: R Markdown and Leaflet"
+author: "Cyprian Ngolah"
+date: "February 4, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+```{r}
+library(leaflet)
+```
+```{r}
+my_map <- leaflet() %>%
+  addTiles() %>%  
+  addMarkers(lng=-114.371788, lat=62.453972, popup="Yellowknife, Alberta")
+my_map 
+
+```
